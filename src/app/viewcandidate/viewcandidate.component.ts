@@ -16,12 +16,20 @@ export class ViewcandidateComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.refreshStudentsList();
+    this.refreshCandidatesList(); // Call the function to fetch candidate details
   }
 
-  refreshStudentsList() {
-    this.candidateService.getCandidateProfile().subscribe((res) => {
-      this.candidateService.candidate = res as Candidate[];
-    });
+  refreshCandidatesList() {
+    // Retrieve data from local storage
+    const storedData = localStorage.getItem('formData');
+    console.log(storedData);
+    if (storedData) {
+      // Parse JSON data and assign it to the candidate array
+      this.candidateService.candidate = JSON.parse(storedData) as Candidate[];
+    }
+    // this.candidateService.getCandidateProfile().subscribe((res) => {
+    //   this.candidateService.candidate = res as Candidate[];
+    // });
+    console.log(this.candidateService.candidate);
   }
 }
