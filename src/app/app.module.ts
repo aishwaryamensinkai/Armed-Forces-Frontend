@@ -27,7 +27,7 @@ import { ViewcandidateComponent } from './viewcandidate/viewcandidate.component'
     RouterModule.forRoot(appRoutes, { onSameUrlNavigation: 'reload' }),
     HttpClientModule,
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
