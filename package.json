@@ -2,6 +2,7 @@
   "name": "angular",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "npx angular-cli-ghpages --dir=dist/your-project-name",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -24,13 +25,14 @@
     "zone.js": "~0.14.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.10",
+    "@angular-devkit/build-angular": "^17.3.4",
     "@angular/cli": "^17.3.3",
     "@angular/compiler-cli": "~17.3.3",
     "@angular/language-service": "~17.3.3",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -39,7 +41,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "protractor": "^3.3.0",
+    "protractor": "^7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~5.4.4"
