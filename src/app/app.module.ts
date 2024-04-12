@@ -4,7 +4,6 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 // components
 import { AppComponent } from "./app.component";
@@ -27,7 +26,7 @@ import { ViewcandidateComponent } from './viewcandidate/viewcandidate.component'
     RouterModule.forRoot(appRoutes, { onSameUrlNavigation: 'reload' }),
     HttpClientModule,
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
