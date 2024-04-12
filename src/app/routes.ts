@@ -12,12 +12,7 @@ export const appRoutes: Routes = [
     component: ViewcandidateComponent,
   },
   {
-    path: "firstpage",
-    component: FirstpageComponent,
-  },
-  {
     path: "",
-    redirectTo: "/firstpage",
-    pathMatch: "full",
-  },
+    component: FirstpageComponent,
+  }
 ];

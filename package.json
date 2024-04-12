@@ -2,7 +2,7 @@
   "name": "angular",
   "version": "0.0.0",
   "scripts": {
-    "deploy": "npx angular-cli-ghpages --dir=dist/your-project-name",
+    "deploy": "npx angular-cli-ghpages --dir=dist/Angular",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
