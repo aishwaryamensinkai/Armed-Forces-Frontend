@@ -29,10 +29,8 @@ Step 2 - Push code to Github Repo
 
 Step 3 - Go to repo setting and select main branch and save
 
-Step 4 - Build application using below cmd
-      `ng build --base-href "https://_githubProfileName_.github.io/_repoName_/"`
+Step 4 - Build application using below cmd `ng build --base-href "https://_githubProfileName_.github.io/_repoName_/"`
 
-Step 5 - Publish your build changes from your local folder to github pages with below cmd
-      `npx angular-cli-ghpages --dir=dist/_repo_name_`
+Step 5 - Publish your build changes from your local folder to github pages with below cmd `npx angular-cli-ghpages --dir=dist/_repo_name_`
 
 Step 6 - Go to repo setting and select gh-pages branch and save
